@@ -1,0 +1,154 @@
+@use 'sass:color';
+
+///
+/// -----------------------------------------------------------------------------------------------
+/// CONTEXT
+/// -----------------------------------------------------------------------------------------------
+///
+
+///
+/// Body context (used to set the size of the rem or em)
+///
+/// @type Length
+///
+/// @access private
+///
+$body-context: 16px !default;
+
+///
+/// -----------------------------------------------------------------------------------------------
+/// COLORS
+/// -----------------------------------------------------------------------------------------------
+///
+
+///
+/// Default color
+///
+/// @type Color
+///
+/// @access private
+///
+$color: #000 !default;
+
+///
+/// Selected background color
+///
+/// @type Color
+///
+/// @access private
+///
+$color-selection-bg: #000 !default;
+
+///
+/// Selected text color
+///
+/// @type Color
+///
+/// @access private
+///
+$color-selection-text: #fff !default;
+
+///
+/// Color of links
+///
+/// @type Color
+///
+/// @access private
+///
+$color-link: #0645ad !default;
+
+///
+/// Color of links (in hover)
+///
+/// @type Color
+///
+/// @access private
+///
+$color-link-hover: color.scale($color-link, $lightness: -10%) !default;
+
+///
+/// -----------------------------------------------------------------------------------------------
+/// FONTS
+/// -----------------------------------------------------------------------------------------------
+///
+
+///
+/// Font system family
+///
+/// @type List
+///
+/// @access private
+///
+$font-system: -apple-system, 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Oxygen-Sans', 'Ubuntu', 'Cantarell', 'Helvetica Neue', sans-serif !default;
+
+///
+/// Font monospace family
+///
+/// @type List
+///
+/// @access private
+///
+$font-monospace: monospace !default;
+
+///
+/// -----------------------------------------------------------------------------------------------
+/// LINE HEIGHT
+/// -----------------------------------------------------------------------------------------------
+///
+
+///
+/// Default line height
+///
+/// @type Length
+///
+/// @access private
+///
+$line-height: 1.4 !default;
+
+///
+/// -----------------------------------------------------------------------------------------------
+/// MARGIN
+/// -----------------------------------------------------------------------------------------------
+///
+
+///
+/// Default margin
+///
+/// @type Length
+///
+/// @access private
+///
+$margin-normal: 1rem !default;
+
+///
+/// Default margin for heading elements
+///
+/// @type Length
+///
+/// @access private
+///
+$margin-title: 1.5rem !default;
+
+///
+/// -----------------------------------------------------------------------------------------------
+/// FONT WEIGHT
+/// -----------------------------------------------------------------------------------------------
+///
+
+///
+/// Regular font-weight
+///
+/// @type Number
+///
+/// @access private
+///
+$weight-regular: 400 !default;
+
+///
+/// Bold font-weight
+///
+/// @type Number
+///
+/// @access private
+///
+$weight-bold: 700 !default;

@@ -1,0 +1,14 @@
+///
+/// Normalization of HTML elements, manually forked from Normalize.css to remove
+/// styles targeting irrelevant browsers while applying new styles.
+///
+/// Normalize is licensed MIT. https://github.com/necolas/normalize.css
+///
+@forward 'src/reset/common';
+@forward 'src/reset/typo';
+@forward 'src/reset/links';
+@forward 'src/reset/code';
+@forward 'src/reset/media';
+@forward 'src/reset/table';
+@forward 'src/reset/forms';
+@forward 'src/reset/print';

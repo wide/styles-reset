@@ -1,0 +1,19 @@
+@use '../variables' as *;
+
+table {
+  border-collapse: collapse; // Prevent double borders
+}
+
+caption {
+  padding-top: $margin-normal;
+  padding-bottom: $margin-normal;
+  caption-side: bottom;
+  color: $color;
+  text-align: left;
+}
+
+th {
+  // Matches default `<td>` alignment by inheriting from the `<body>`, or the
+  // closest parent with a set `text-align`.
+  text-align: inherit;
+}

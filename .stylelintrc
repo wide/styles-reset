@@ -1,0 +1,6 @@
+{
+  "extends": "@wide/stylelint-config",
+  "rules": {
+    "property-no-vendor-prefix": null
+  }
+}
