@@ -42,6 +42,8 @@ html {
 body {
   margin: 0;
   font-size: utils.em($body-context, 16);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 ::selection {
