@@ -16,26 +16,24 @@
 ///
 /// 1. Set the default `font-size` and `line-height` for the entire project,
 ///    sourced from our default variables.
-/// 2. Force scrollbars to always be visible to prevent awkward ‘jumps’ when
-///    navigating between pages that do/do not have enough content to produce
-///    scrollbars naturally.
-/// 3. Ensure the page always fills at least the entire height of the viewport.
-/// 4. Set base font-size to equiv "10px", which is adapted to rem unit.
-/// 5. IE9-IE11 math fixing.
-/// 6. Prevent adjustments of font size after orientation changes in IE
+/// 2. Ensure the page always fills at least the entire height of the viewport.
+/// 3. Set base font-size to equiv "10px", which is adapted to rem unit.
+/// 4. IE9-IE11 math fixing.
+/// 5. Prevent adjustments of font size after orientation changes in IE
 ///    on Windows Phone and in iOS.
-/// 7. Change the default tap highlight to be completely transparent in iOS.
+/// 6. Change the default tap highlight to be completely transparent in iOS.
 ///
 html {
-  min-height: 100%; // -> [3]
-  overflow-y: scroll; // -> [2]
+  min-height: 100%; // -> [2]
+  overflow-y: auto;
   color: $color;
   font-family: $font-system;
-  font-size: 62.5%; // -> [4]
-  font-size: calc(1em * .625); // -> [5]
+  font-size: 62.5%; // -> [3]
+  font-size: calc(1em * .625); // -> [4]
+  font-variant-numeric: tabular-nums;
   line-height: $line-height; // -> [1]
-  -webkit-text-size-adjust: 100%; // -> [6]
-  -webkit-tap-highlight-color: rgba($color, 0); // -> [7]
+  -webkit-text-size-adjust: 100%; // -> [5]
+  -webkit-tap-highlight-color: rgba($color, 0); // -> [6]
   touch-action: manipulation;
 }
 
