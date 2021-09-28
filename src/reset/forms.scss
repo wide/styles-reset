@@ -68,7 +68,17 @@ button,
 [type='button'], // -> [1]
 [type='reset'],
 [type='submit'] {
+  color: currentColor; // fix iOS15
   -webkit-appearance: button; // -> [2]
+}
+
+///
+/// Keep the current color on iOS15.
+///
+[type='file'] {
+  &::file-selector-button {
+    color: currentColor;
+  }
 }
 
 ///
