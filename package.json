@@ -1,6 +1,6 @@
 {
   "name": "@wide/styles-reset",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "description": "Restore CSS base for all browser.",
   "license": "MIT",
   "author": "Julien Martins Da Costa (https://github.com/jdacosta)",
